@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Elambharathi Thangavel | Python Developer | Manychat Freelancer
 ---
 
 This is a blank Quartz installation.
