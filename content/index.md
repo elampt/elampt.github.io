@@ -1,3 +1,3 @@
 ---
-Elambharathi Thangavel | Python Developer | Manychat Freelancer
+Elambharathi Thangavel | Python Developer
 ---
