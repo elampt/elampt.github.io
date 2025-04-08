@@ -7,13 +7,15 @@ tags:
 1) **Five Point Some One**. 
 	My first ever book (Thanks to Thanvanth for lending me the book). Was going through a very bad school life phase, this was a great relief
 	* **Date :** October 2018
-	* **Author :** Chetan Bhagat. 
+	* **Author :** Chetan Bhagat.
+	
 
 
 2) **Revolution 2020**. 
 	Best work of Chetan Bhagat in my opinion
 	* **Date :** October 2018
 	* **Author :** Chetan Bhagat. 
+
 
 
 3) **Three Mistakes Of My life**. 
