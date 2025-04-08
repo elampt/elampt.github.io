@@ -5,163 +5,163 @@ tags:
 # English
 
 1) **Five Point Some One**. 
+
 My first ever book (Thanks to Thanvanth for lending me the book). Was going through a very bad school life phase, this was a great relief
 * **Date :** October 2018
 * **Author :** Chetan Bhagat.
 
 
 2) **Revolution 2020**. 
-	Best work of Chetan Bhagat in my opinion
-	* **Date :** October 2018
-	* **Author :** Chetan Bhagat. 
+Best work of Chetan Bhagat in my opinion
+* **Date :** October 2018
+* **Author :** Chetan Bhagat. 
 
 
-
-3) **Three Mistakes Of My life**. 
+2) **Three Mistakes Of My life**. 
 	* **Date :** December 2018
 	* **Author :** Chetan Bhagat. 
 
 
-4) **One Night At The Call Centre**. 
+3) **One Night At The Call Centre**. 
 	* **Date :** January 2019
 	* **Author :** Chetan Bhagat. 
 
 
-5) **One Indian Girl**. 
+4) **One Indian Girl**. 
 	First of Chetan Bhagat from a  woman’s perspective and was a new experience
 	* **Date :** March 2019
 	* **Author :** Chetan Bhagat. 
 
-6) **2 States**. 
+5) **2 States**. 
 	Very quick read (2 days)
 	* **Date :**April 2019
 	* **Author :** Chetan Bhagat. 
 
 
-7) **Half Girlfriend**. 
+6) **Half Girlfriend**. 
 	* **Date :** April 2019
 	* **Author :** Chetan Bhagat. 
 
 
-8) **The Girl in Room 105**. 
+7) **The Girl in Room 105**. 
 	* **Date :** June 2019
 	* **Author :** Chetan Bhagat. 
 
 
-9) **The Alchemist**. 
+8) **The Alchemist**. 
 	It's the possibility of having a dream come true that makes life interesting.
 	* **Date :** May 2020
 	* **Author :** Paulo Coelho. 
 
 
-10) **Man’s Search for meaning**. 
+9) **Man’s Search for meaning**. 
 	The one thing that I learnt from this book is that whenever we think that we are going through the hardest times of our life, just remember, there is someone, somewhere going through a lot more than than what we are. 
 	**No matter how hard life hits us, all we can do is be ourselves**
 	* **Date :** June 2020
 	* **Author :** Viktor Frankl. 
 
 
-11) **The fault in our stars**. 
+10) **The fault in our stars**. 
 	Love and Pain
 	* **Date :** July 2020
 	* **Author :** John Green. 
 
 
-12) **Eleven Minutes**. 
+11) **Eleven Minutes**. 
 	Desire (vs) True Love
 	* **Date :** August 2020
 	* **Author :** Paulo Coelho. 
 
 
-13) **Shoe Dog**. 
+12) **Shoe Dog**. 
 	A motivating memoir form the founder of **Nike**. Motivation for my daily running then.
 	* **Date :** December 2020
 	* **Author :** Phil Knight. 
 
 
-14) **Steve Jobs**. 
+13) **Steve Jobs**. 
 	Travel, make the best out of you, live every moment like it is the last. 
 	**A soulful journey into the very Heart of Apple** 
 	* **Date :** May 2021
 	* **Author :** Walter Isaacson. 
 
 
-15) **If Tomorrow Comes**. 
+14) **If Tomorrow Comes**. 
 	* **Date :** April 2021
 	* **Author :** Sidney Sheldon. 
 
 
-16) **To Kill A Mocking Bird**. 
+15) **To Kill A Mocking Bird**. 
 	* **Date :** May 2021
 	* **Author :** Harper Lee. 
 
 
-17) **The Kite Runner**. 
+16) **The Kite Runner**. 
 	The experience stirred my deepest emotions in ways I didn't expect.
 	* **Date :** June 2021
 	* **Author :** Khaled Hosseini. 
 
 
-18) **A Thousand Splendid Suns**. 
+17) **A Thousand Splendid Suns**. 
 	The experience stirred my deepest emotions in ways I didn't expect.
 	* **Date :** August 2023
 	* **Author :** Khaled Hosseini. 
 
 
-19) **A Man Called Ove**. 
+18) **A Man Called Ove**. 
 	Good one
 	* **Date :** October 2023
 	* **Author :** Fredrik Backman. 
 
 
-20) **Nothing Lasts Forever**. 
+19) **Nothing Lasts Forever**. 
 	* **Date :** January 2024
 	* **Author :** Sidney Sheldon. 
 
 
-21) **Norwegian Wood**. 
+20) **Norwegian Wood**. 
 	* **Date :** April 2024
 	* **Author :** Haruki Murakami. 
 
 
-22) **Let's Talk Money**. 
+21) **Let's Talk Money**. 
 	Best financial guide to the Indian mindset
 	* **Date :** January 2025
 	* **Author :** Monika Halan. 
 
 
-23) **Let's Talk Mutual Funds**. 
+22) **Let's Talk Mutual Funds**. 
 	Intro into Indian Mutual Funds
 	* **Date :** January 2025
 	* **Author :** Monika Halan. 
 
 
-24) **The Psychology Of Money**. 
+23) **The Psychology Of Money**. 
 	Money x Greed x Happiness
 	* **Date :** January 2025
 	* **Author :** Morgan Housel. 
 
 
-25) **The Art of Being Alone**. 
+24) **The Art of Being Alone**. 
 	Self love is about two things: **Knowing Yourself** and **Accepting Yourself** 
 	* **Date :** February 2025
 	* **Author :** Renuka Gavrani. 
 
 
-26) **The Richest Man in Babylon**. 
+25) **The Richest Man in Babylon**. 
 	Expense Control, Making money work for us, Passive Income, Wealth Accumulation
 	* **Date :** February 2025
 	* **Author :** George S. Clason. 
 
 
-27)  **So Good They Can't Ignore you**. 
+26)  **So Good They Can't Ignore you**. 
 	Spend time in what's important, instead of what's immediate.
 	Giving people control over what they do and how they do it increases their happiness, engagement, and sense of fulfillment 
 	* **Date :** March 2025
 	* **Author :** Cal Newport. 
 
 
-28)  **Ikigai**. 
+27)  **Ikigai**. 
 	Longevity, Resilience, and finding purpose in life
 	* **Date :** March 2025
 	* **Author :**  Francesc Miralles and Hector Garcia. 
