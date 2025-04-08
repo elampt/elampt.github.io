@@ -4,7 +4,7 @@ description: "Notes, projects, and learning journal of Elam"
 ---
 # Welcome 👋
 
-Hey there! I am Elam, and this is my **personal knowledge garden** 🌱 — a living, evolving space where I document what I'm learning across tech, data, AI, and beyond.
+Hey there! I am Elam and this is my **personal knowledge garden** 🌱 — a living, evolving space where I document what I'm learning across tech, data, AI, and beyond.
 
 You'll find:
 - ✍️ Notes from courses and projects  
