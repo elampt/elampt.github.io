@@ -5,11 +5,9 @@ tags:
 # English
 
 1) **Five Point Some One**. 
-	My first ever book (Thanks to Thanvanth for lending me the book). Was going through a very bad school life phase, this was a great relief
+My first ever book (Thanks to Thanvanth for lending me the book). Was going through a very bad school life phase, this was a great relief
 * **Date :** October 2018
 * **Author :** Chetan Bhagat.
-
-
 
 
 2) **Revolution 2020**. 
