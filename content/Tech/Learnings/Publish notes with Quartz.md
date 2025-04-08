@@ -8,7 +8,7 @@
 * **Building the quartz**
 	This will start a local web server to run our Quartz on our computer. We can view it at http://localhost:8080/
 
-`npx quartz build --serve`
+ `npx quartz build --serve`
 
 * **Sync the change to Github & Deploy**
 	Run this command every time we want to push updates to our repository.

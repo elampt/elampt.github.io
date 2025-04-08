@@ -2,7 +2,7 @@
 tags:
   - Book
 ---
-
+## Key Takeaways
 **Self love is about two things:**
 1. Knowing Yourself 
 2. Accepting Yourself 
