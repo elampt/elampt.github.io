@@ -48,4 +48,4 @@ Option 2: FAISS (Facebook AI Similarity Search)
 5. Inclusion of Chat Memory
 6. **Intent Detection** logic addition. The previous version of code used to search the vector store for all the user queries for relevant answers. But, sometimes the user query could be simple greeting ("Hi", "Good Morning") or gratitude ("Thank You"), in such cases we need not call the **search** function to search for embeddings in the vector store
 7. File directory to Blog URL mapping
-8. 
+8. Create UI with Streamlit and host the ChatBot in Streamlit cloud
