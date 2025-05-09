@@ -1,6 +1,6 @@
 # Objective
 To create a chatbot for https://elampt.github.io/ which answers user questions based on the content on the website and should return citations along with the answers
-
+> [Project Link](https://github.com/elampt/elam-chatbot)
 # Project Breakdown
 
 1. Load the entire .md files from GitHub
@@ -22,22 +22,22 @@ To create a chatbot for https://elampt.github.io/ which answers user questions b
 ## Research To Be Done
 **Focus mainly on Open Source/ Free Platforms**
 ### Converting Data into Embeddings
-Option 1: **Sentence Transformers** (Hugging Face) with **chromadb** embedding function
+Option 1: **Sentence Transformers** (Hugging Face) ✅
 	all-MiniLM-L6-v2 model
 Option 2: **Instructor Embeddings** (Hugging Face)
 Option 3: **Gensim** (Word2Vec/Doc2Vec)
 
 ### Pick a Vector Store
 Option 1 (Simpler choice): ChromaDB 
-Option 2: FAISS (Facebook AI Similarity Search)
+Option 2: FAISS (Facebook AI Similarity Search) ✅
 
 
 ### Pick a GenAI model for building the ChatBot and implementing the RAG system
-* Groq model provider
+* Groq model provider ✅
 
 ### Pick a Front-end UI component for the ChatBot
 * Gradio
-* Streamlit
+* Streamlit ✅
 
 # Project Build-Up
 1. Creation of vector store with embeddings for the data in .md files (Using S**entence Transformers** Library) by breaking each .md files into sections(To improve the granularity and relevance of the search results). Also convert the query into embedding, use cosine similarity or Euclidean distance to retrieve the embedding most similar to the query embedding
