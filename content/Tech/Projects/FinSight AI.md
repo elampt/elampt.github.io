@@ -1,4 +1,4 @@
-("Finance + Insight + AI")
+**("Finance + Insight + AI")**
 
 > An AI-driven app that lets users track stock portfolios, view news-based sentiment analysis, and receive natural language insights on their investments.
 
@@ -71,3 +71,20 @@
 	* `add-holding` - Used to add a new holding to an user's portfolio
 	* `get-all-holdings` - Used to get the cumulative list of all holdings for an user
 	* `get-holdings-by-symbol` - Used to get the holdings list for an user for a particular stock
+
+
+# # Phase 2 Backend Overview:
+
+For Phase 2, we will need:
+
+1. **News Fetching API**:
+    
+    - Fetch news articles related to the user's holdings (e.g., using APIs like [NewsAPI](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.html) or [Alpha Vantage News](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.html)).
+    - Filter news based on stock symbols in the user's portfolio.
+2. **Sentiment Analysis**:
+    
+    - Use a sentiment analysis library (e.g., `TextBlob`, `VADER`, or a pre-trained model like Hugging Face's transformers) to analyze the sentiment of the news articles.
+    - Return the sentiment (positive/negative/neutral) for each stock.
+3. **API Endpoint**:
+    
+    - Create an endpoint like `/holdings/news-sentiment` that returns the sentiment analysis results for the user's holdings.
