@@ -16,3 +16,24 @@
 3. Afternoon (Explored news API, Sentiment Analyzer options - finBERT, VADER)
 4. Evening (Implemented the Sentiment Analysis for User holdings using finBERT)
 5. Evening (Streamlit basics study from documentation)
+
+# 11/05/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 6 ✅
+
+### Session break up
+1. Morning (Streamlit frontend building)
+2. Morning (Streamlit frontend building)
+3. Evening (Streamlit frontend testing - date format typo error debug)
+4. Evening (Frontend enhancement 1)
+5. Night (Frontend enhancement 2)
+6. Night (Frontend wrap up)
+
+# 12/05/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 
+
+### To-do
+- [ ] Obsidian Documentation of the project
+- [ ] Hosting the project in streamlit cloud
+- [ ] Figure out the database part while hosting
+### Session break up
+1. 
