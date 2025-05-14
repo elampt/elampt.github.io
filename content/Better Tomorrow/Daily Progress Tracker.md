@@ -29,11 +29,31 @@
 6. Night (Frontend wrap up)
 
 # 12/05/2025 - Monday
-### No. of DeepWork sessions (50 mins each) = 
+### No. of DeepWork sessions (50 mins each) = 3 ✅
 
 ### To-do
 - [ ] Obsidian Documentation of the project
 - [ ] Hosting the project in streamlit cloud
 - [ ] Figure out the database part while hosting
 ### Session break up
-1. 
+1. Noon (Streamlit front end minor tweaks, deployment start)
+2. Afternoon (AWS RDS instance creation)
+3. Evening (AWS RDS instance testing, connection with the code)
+
+# 13/05/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 5 ✅
+### Session break up
+1. Morning (AWS Billing issue analysis)
+2. Noon (Neon PostgreSQL deployment)
+3. Afternoon (Project structure split for frontend and backend)
+4. Evening (Render FastAPI backend deployment)
+5. Night (FastAPI backend deployment Huggingface)
+
+# 14/05/2025 - Wednesday
+### No. of DeepWork sessions (50 mins each) = 5 ✅
+### Session break up
+1. Morning (Huggingface deploy bug analysis)
+2. Noon (Huggingface deploy bug analysis)
+3. Afternoon (geniex application)
+4. Evening (Huggingface backend Deploy - Success)
+5. Night (Streamlit frontend deploy - Success)
