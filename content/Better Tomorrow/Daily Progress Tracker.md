@@ -57,3 +57,10 @@
 3. Afternoon (geniex application)
 4. Evening (Huggingface backend Deploy - Success)
 5. Night (Streamlit frontend deploy - Success)
+
+# 15/05/2025 - Thursday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Noon (Finsight ReadME file creation, documentation)
+2. Evening (Finsight - DB waking up issue bug fix)
+3. Evening (Finsight - Implement cache in Streamlit for news page)
