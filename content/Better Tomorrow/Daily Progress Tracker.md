@@ -32,9 +32,9 @@
 ### No. of DeepWork sessions (50 mins each) = 3 ✅
 
 ### To-do
-- [ ] Obsidian Documentation of the project
-- [ ] Hosting the project in streamlit cloud
-- [ ] Figure out the database part while hosting
+- [x] Obsidian Documentation of the project
+- [x] Hosting the project in streamlit cloud
+- [x] Figure out the database part while hosting
 ### Session break up
 1. Noon (Streamlit front end minor tweaks, deployment start)
 2. Afternoon (AWS RDS instance creation)
@@ -64,3 +64,10 @@
 1. Noon (Finsight ReadME file creation, documentation)
 2. Evening (Finsight - DB waking up issue bug fix)
 3. Evening (Finsight - Implement cache in Streamlit for news page)
+
+# 16/05/2025 - Friday
+### No. of DeepWork sessions (50 mins each) = 2
+### Session break up
+1. Afternoon (ML C1W1 - Supervised vs Unsupervised Learning)
+2. Afternoon (ML C1W1 - Linear Regression Model)
+3. Evening ()

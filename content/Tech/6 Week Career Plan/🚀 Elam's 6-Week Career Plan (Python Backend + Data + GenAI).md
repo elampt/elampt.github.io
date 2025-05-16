@@ -18,19 +18,19 @@
 
 **Daily Plan:**
 
-* **Day 1: 05/05/2025** ✅
+* **Day 1: 05/04/2025** ✅
 	Foundational Models & Prompt Engineering – Learn about transformers, fine-tuning, and try prompt engineering examples
 
-* **Day 2: 06/05/2025** ✅
+* **Day 2: 06/04/2025** ✅
 	Embeddings & Vector Stores – Explore OpenAI embeddings + FAISS/ChromaDB basics
 
-* **Day 3: 14/05/2025** ✅
+* **Day 3: 14/04/2025** ✅
 	GenAI Agents – Understand agent architecture, experiment with LangChain's AgentExecutor
 
-* **Day 4: 14/05/2025 ✅** 
+* **Day 4: 14/04/2025 ✅** 
 	Domain-Specific LLMs – Read about SecLM, Med-PaLM, brainstorm niche LLM ideas
 
-* **Day 5: 16/05/2025 ✅** 
+* **Day 5: 16/04/2025 ✅** 
 	MLOps for GenAI – Learn about Vertex AI tools, explore model pipelines
 
 * **Day 6:** Reflect + Post learnings (LinkedIn / Notion blog)
