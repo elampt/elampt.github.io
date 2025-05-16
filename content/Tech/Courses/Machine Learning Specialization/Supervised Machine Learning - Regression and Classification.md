@@ -44,27 +44,28 @@ Following are some examples:
 >(x, y) = single training example<br>
 >(x$^i$, y$^i$) = i$^t$$^h$ training example
 
-```SQL
-	              +----------+---------+
-                  |     Training set   |
-                  +----------+---------+
-                             |
-                             ▼
-		          +----------+---------+
-                  | Learning algorithm |
-                  +----------+---------+
-                             |
-                             ▼
-					 +-------+------+
-	     x  --->     |  f(function) |     --->  ŷ
-	 (feature)       +-------+------+      (prediction)
-
-
-
-						 +-+-+
-e.g:  size --->          | f |            ---> price
-						 +-+-+              (estimated)
 ```
+                 +-------------------+
+                 |   Training Set    |
+                 +-------------------+
+                           |
+                           v
+                 +-------------------+
+                 | Learning Algorithm|
+                 +-------------------+
+                           |
+                           v
+                     +----------------+
+          x  ---->   |  f(x) Function |  ---->  ŷ
+      (feature)      +----------------+       (prediction)
+
+Example:
+
+                  +-----+
+size (x)  ---->   |  f  |  ---->  price (ŷ - estimated)
+                  +-----+
+```
+
    ![[Screenshot 2025-05-16 at 4.49.11 PM.png|500]]
 ## Cost Function: Squared Error cost function
 > A mathematical function that measures the difference between a model's predictions and the actual values
@@ -100,5 +101,24 @@ $$
 
 
 
+```
+                 +-------------------+
+                 |   Training Set    |
+                 +-------------------+
+                           |
+                           v
+                 +-------------------+
+                 | Learning Algorithm|
+                 +-------------------+
+                           |
+                           v
+                    +----------------+
+          x  ---->   |  f(x) Function |  ---->  ŷ
+      (feature)      +----------------+       (prediction)
 
+Example:
 
+	                  +-----+
+	size (x)  ---->   |  f  |  ---->  price (ŷ - estimated)
+	                  +-----+
+```
