@@ -66,8 +66,9 @@
 3. Evening (Finsight - Implement cache in Streamlit for news page)
 
 # 16/05/2025 - Friday
-### No. of DeepWork sessions (50 mins each) = 2
+### No. of DeepWork sessions (50 mins each) = 4 ✅
 ### Session break up
 1. Afternoon (ML C1W1 - Supervised vs Unsupervised Learning)
 2. Afternoon (ML C1W1 - Linear Regression Model)
-3. Evening ()
+3. Evening (ML C1W1- Cost Function)
+4. Evening (ML C1W1 - Cost Function visualization)
