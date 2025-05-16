@@ -35,16 +35,16 @@ Following are some examples:
 > This is a **Supervised learning** model. Linear regression is one of the regression models. Predicts numbers
 
 >[!tip] Terminology
->Data used to train the model  = **Training Set**
->x = "**input**" variable (**feature**)
->y = "**output**" variable (**target**)
->ŷ = modles predicted value
->y = true or observed value of the dependent variable
->m = number of training examples
->(x, y) = single training example
+>Data used to train the model  = **Training Set** <br>
+>x = "**input**" variable (**feature**)<br>
+>y = "**output**" variable (**target**)<br>
+>ŷ = modles predicted value<br>
+>y = true or observed value of the dependent variable<br>
+>m = number of training examples<br>
+>(x, y) = single training example<br>
 >(x$^i$, y$^i$) = i$^t$$^h$ training example
 
-```
+```SQL
 	              +----------+---------+
                   |     Training set   |
                   +----------+---------+
