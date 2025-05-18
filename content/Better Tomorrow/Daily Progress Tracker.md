@@ -1,4 +1,6 @@
 ![[Pasted image 20250509210806.png | 600x420]]
+>[!tip] Focus on the Process/System rather than the Outcome/Goal
+
 # 09/05/2025 - Friday
 
 ### No. of DeepWork sessions (50 mins each) = 2 ✅
@@ -72,3 +74,27 @@
 2. Afternoon (ML C1W1 - Linear Regression Model)
 3. Evening (ML C1W1- Cost Function)
 4. Evening (ML C1W1 - Cost Function visualization)
+
+# 17/05/2025 - Saturday
+### No. of DeepWork sessions (50 mins each) = 4 ✅
+### Session break up
+1. Morning (ML C1W1 - Gradient Descent for Linear Regression)
+2. Afternoon (ML C1W2 - Multiple Linear Regression)
+3. Afternoon (ML C1W2 - Vectorization)
+4. Evening (ML C1W2 - Gradient Descent for Multiple Linear Regression)
+
+# 18/05/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 4 ✅
+### Session break up
+1. Morning (ML C1W2 - Feature Scaling)
+2. Noon (ML C1W2 - Polynomial Regression, Lab)
+3. Afternoon (ML C1 W3 - Logistic Regression)
+4. Evening (ML C1 W3 - Decision Boundary)
+
+# 18/05/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 
+### Session break up
+1. 
+
+### DSA Prep Day 1
+1. 
