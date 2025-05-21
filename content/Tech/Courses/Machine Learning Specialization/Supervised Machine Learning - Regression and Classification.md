@@ -425,3 +425,99 @@ $$
 $$
 ![[ML - Decision boundaries.png]]
 
+# Cost function for Logistic Regression
+* The **Squared error cost** function we used for Linear regression(Gives a bowl shape - convex function) doesn't work well for Logistic Regression (Gives Non-convex graph)
+
+**Logistic Cost Function**
+$$
+J(\vec{w}, b) = \frac{1}{m} \sum_{i=1}^{m} L\left(f_{\vec{w}, b}(\vec{x}^{(i)}), y^{(i)}\right)
+$$
+**Logistic Loss Function**
+$$
+L\left(f_{\vec{w}, b}(\vec{x}^{(i)}), y^{(i)}\right) = 
+\begin{cases}
+-\log\left(f_{\vec{w}, b}(\vec{x}^{(i)})\right) & \text{if } y^{(i)} = 1 \\
+-\log\left(1 - f_{\vec{w}, b}(\vec{x}^{(i)})\right) & \text{if } y^{(i)} = 0
+\end{cases}
+$$
+**Simplified Cost Function**
+$$
+L\left(f_{\vec{w}, b}(\vec{x}^{(i)}), y^{(i)}\right) = -y^{(i)} \log\left(f_{\vec{w}, b}(\vec{x}^{(i)})\right) - (1 - y^{(i)}) \log\left(1 - f_{\vec{w}, b}(\vec{x}^{(i)})\right)
+$$
+$$
+J(\vec{w}, b) = \frac{1}{m} \sum_{i=1}^{m} L\left(f_{\vec{w}, b}(\vec{x}^{(i)}), y^{(i)}\right)
+$$
+$$
+= -\frac{1}{m} \sum_{i=1}^{m} \left[y^{(i)} \log\left(f_{\vec{w}, b}(\vec{x}^{(i)})\right) + (1 - y^{(i)}) \log\left(1 - f_{\vec{w}, b}(\vec{x}^{(i)})\right)\right]
+$$
+# Gradient Descent Implementation
+
+$$
+\text{Repeat} \left\{
+\begin{aligned}
+w_j &= w_j - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) x_j^{(i)} \right] \\
+b &= b - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) \right]
+\end{aligned}
+\right.
+$$
+$$
+\text{Linear regression:} \quad f_{\vec{w}, b}(\vec{x}) = \vec{w} \cdot \vec{x} + b
+$$
+$$
+\text{Logistic regression:} \quad f_{\vec{w}, b}(\vec{x}) = \frac{1}{1 + e^{-(\vec{w} \cdot \vec{x} + b)}}
+$$
+# The problem of Overfitting
+![[ML - Regression overfit.png]]
+![[ML - Classification overfit.png]]
+## Addressing Overfitting
+1. **Collect more training data** (The learning algorithm will learn to fit better)
+2. **Select features to include/ exclude** (**Feature selection :** Choose the most relevant features)
+3. **Regularization** (Shrink the values of parameters instead of altogether removing the features like discussed in the previous step)
+## Cost Function with Regularization
+$$
+\min_{\vec{w}, b} J(\vec{w}, b) = \min_{\vec{w}, b} \left[ 
+\frac{1}{2m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right)^2 
++ \frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2 
+\right]
+$$
+- The **first term**: Mean squared error (MSE) – fits the data.   
+- The **second term**: L2 regularization – penalizes large weights​ to reduce overfitting.
+- **lambda**: Regularization strength – balances fit vs simplicity.
+## Regularized Linear Regression
+🔹 Regularized Cost Function
+$$
+\min_{\vec{w}, b} J(\vec{w}, b) = \min_{\vec{w}, b} \left[ 
+\frac{1}{2m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right)^2 
++ \frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2 
+\right]
+$$
+🔹 Gradient Descent Updates
+$$
+w_j := w_j - \alpha \left[ 
+\frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) x_j^{(i)} + \frac{\lambda}{m} w_j 
+\right]
+$$
+$$
+w_j := w_j \left(1 - \alpha \frac{\lambda}{m} \right) 
+- \alpha \frac{1}{m} \sum_{i=1}^{m} \left( f_{w,b}(\vec{x}^{(i)}) - y^{(i)} \right) x_j^{(i)}
+$$
+For the bias term 𝑏 (not regularized):
+$$
+b := b - \alpha \left[ 
+\frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) 
+\right]
+$$
+## Regularized Logistic Regression
+🔹 Regularized Cost Function
+$$
+J(\vec{w}, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log(f_{\vec{w}, b}(\vec{x}^{(i)})) + (1 - y^{(i)}) \log(1 - f_{\vec{w}, b}(\vec{x}^{(i)})) \right] + \frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2
+$$
+🔹 Gradient Descent Updates
+$$
+w_j := w_j - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) x_j^{(i)} + \frac{\lambda}{m} w_j \right]
+$$
+For the bias term
+$$
+b := b - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left( f_{\vec{w}, b}(\vec{x}^{(i)}) - y^{(i)} \right) \right]
+$$
+

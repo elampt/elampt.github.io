@@ -92,9 +92,27 @@
 4. Evening (ML C1 W3 - Decision Boundary)
 
 # 18/05/2025 - Monday
-### No. of DeepWork sessions (50 mins each) = 
+### No. of DeepWork sessions (50 mins each) = 3 ✅
 ### Session break up
-1. 
+1. Noon (ML C1 W3 - Gradient Descent for Logistic Regression)
+2. Afternoon (ML C1 W3 - Overfitting)
+3. Python Basics revamping
 
+# 18/05/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 4 ✅
+### Session break up
+1. Afternoon (ML C2 W1 - Neural Networks Intro)
+2. Evening (ML C2 W1 - Neural Network Model)
+3. Evening (ML C2 W1 - TensorFlow Implementation)
 ### DSA Prep Day 1
-1. 
+1. Noon (Strings Basics - Geeks)
+
+# 18/05/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Afternoon (ML C2 W1 - Neural Network implementation in Python)
+2. Afternoon (ML C2 W1 - Lab)
+3. Evening (ML C2 W2 - Activation Functions)
+
+### DSA Prep Day 1 (Striver's SDE Sheet)
+1. Morning - Day 1: Arrays (3/6)
