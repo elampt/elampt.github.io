@@ -161,10 +161,11 @@
 3. Afternoon (ML C2 W2 - Additional NN concepts)
 
 # 27/05/2025 - Tuesday
-### No. of DeepWork sessions (50 mins each) = 2
+### No. of DeepWork sessions (50 mins each) = 3 ✅
 ### Session break up
 1. Morning early (ML C2 W3 - Choosing Model)
 2. Afternoon (ML C2 W3 - Bias and Variance)
+3. Evening (ML C2 W3 - ML Development process)
 
 ### DSA Prep Day 2 (Striver's SDE Sheet)
 1. Morning - Day 1: Arrays Part - II (4/4)
