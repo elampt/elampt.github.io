@@ -91,14 +91,14 @@
 3. Afternoon (ML C1 W3 - Logistic Regression)
 4. Evening (ML C1 W3 - Decision Boundary)
 
-# 18/05/2025 - Monday
+# 19/05/2025 - Monday
 ### No. of DeepWork sessions (50 mins each) = 3 ✅
 ### Session break up
 1. Noon (ML C1 W3 - Gradient Descent for Logistic Regression)
 2. Afternoon (ML C1 W3 - Overfitting)
 3. Python Basics revamping
 
-# 18/05/2025 - Tuesday
+# 20/05/2025 - Tuesday
 ### No. of DeepWork sessions (50 mins each) = 4 ✅
 ### Session break up
 1. Afternoon (ML C2 W1 - Neural Networks Intro)
@@ -107,7 +107,7 @@
 ### DSA Prep Day 1
 1. Noon (Strings Basics - Geeks)
 
-# 18/05/2025 - Tuesday
+# 21/05/2025 - Wednesday
 ### No. of DeepWork sessions (50 mins each) = 3 ✅
 ### Session break up
 1. Afternoon (ML C2 W1 - Neural Network implementation in Python)
@@ -116,3 +116,55 @@
 
 ### DSA Prep Day 1 (Striver's SDE Sheet)
 1. Morning - Day 1: Arrays (3/6)
+
+# 22/05/2025 - Thursday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Afternoon (NeoFi Assessment)
+2. Afternoon (NeoFi Assessment)
+3. Evening (NeoFi Assessment)
+
+### DSA Prep Day 1 (Striver's SDE Sheet)
+1. Morning - Day 1: Arrays (6/6)
+
+# 23/05/2025 - Friday
+### No. of DeepWork sessions (50 mins each) = 5 ✅
+### Session break up
+1. Morning (NeoFi Assessment)
+2. Morning (NeoFi Assessment)
+3. Noon (NeoFi Assessment)
+4. Afternoon (NeoFi Assessment)
+5. Evening (NeoFi Assessment)
+
+# 24/05/2025 - Saturday
+### No. of DeepWork sessions (50 mins each) = 5 ✅
+### Session break up
+1. Morning early (NeoFi Assessment)
+2. Morning (NeoFi Assessment)
+3. Morning (NeoFi Assessment)
+4. Afternoon (NeoFi Assessment)
+5. Evening (NeoFi Assessment)
+
+# 25/05/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 4 ✅
+### Session break up
+1. Morning early (NeoFi Assessment)
+2. Morning early (NeoFi Assessment)
+3. Morning (NeoFi Assessment)
+4. Morning (NeoFi Assessment submission and deployment)
+
+# 26/05/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Morning early (ML C2 W2 - Multiple Classification)
+2. Morning early (ML C2 W2 - Softmax)
+3. Afternoon (ML C2 W2 - Additional NN concepts)
+
+# 27/05/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 2
+### Session break up
+1. Morning early (ML C2 W3 - Choosing Model)
+2. Afternoon (ML C2 W3 - Bias and Variance)
+
+### DSA Prep Day 2 (Striver's SDE Sheet)
+1. Morning - Day 1: Arrays Part - II (4/4)
