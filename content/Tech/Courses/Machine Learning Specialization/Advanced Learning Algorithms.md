@@ -394,3 +394,142 @@ Let's take the example of spam classifier, try the following methods to reduce t
 ## Error analysis
 * Second important task after figuring out bias and variance diagnostics
 * In case the algorithm misclassifies a lot, a manual examination might be needed for the fix
+## Adding data
+* Add more data of the types where error analysis has indicated it might help (Instead of adding more data of everything)
+* **Data Augmentation:** Modifying an existing training example to create a new training example (The distortion introduced should be representation of the type of noise/distortions in the test set. Usually doesn't help to add purely random/meaningless noise to our data)
+* **Data Synthesis :** Using artificial data inputs to create a new training example (Brand new)
+
+**Engineering the data used by our system :** AI = Code (algorithm/model) + Data
+* **Conventional model-centric approach :** Initially, people were focusing mostly on the Code to enhance the model/algorithm performance
+* **Data-centric approach :** Now that the algorithms have themselves become much better in performance (Neural Networks for example), people are now focusing on Data (Such as Data Engineering, collecting more data, Data Augmentation etc.). This could be an efficient way to improve the performance of algorithm
+## Transfer Learning
+> For an application where we don't have enough data, transfer learning is a technique that allows to use data from a different task to help on our application. However, the **supervised pre-training** model's input and the **fine-tuning** model's input should be of same type
+
+**Option 1 (Very small Training set):** Only train output layers parameters
+**Option 2 (Training set with enough data):** Train all parameters (However, except for the output layer, the parameters would be initialized from values trained from the previous model for the respective layers)
+
+1. Download neural network parameters pre-trained on a large dataset with same input type (e.g., images, audio, text) as our application (or train our own)
+2. Further train (fine tune) the network on our own data
+
+# Full cycle of a machine learning project
+
+1. **Scope project**  
+   → *Define project goals and problem statement.*
+
+2. **Collect data**  
+   → *Define what data is needed and collect relevant datasets.*
+
+3. **Train model**  
+   → *Training, error analysis, and iterative improvement.*
+
+4. **Deploy in production**  
+   → *Deploy the model, monitor its performance, and maintain the system.*
+
+**Iterative loops may occur between:**
+- **Deployment ↔ Training** (for performance improvements)  
+- **Training ↔ Data Collection** (for better features or more data)
+
+## Deployment
+```sql
+		-----------------------      API call (x)       -------------------
+		|   Inference Server. |   <-----------------    |                 |
+		|  ------------------ |       (audio clip)      |    Mobile app   |
+		|  |    ML Model    | |                         |                 |
+		|  ------------------ |      Inference (ŷ)      -------------------
+		|                     |   ------------------>
+		-----------------------    (text transcript)
+```
+
+Software Engineering may be needed for (MLOps - Machine Learning Operations):
+1. Ensure reliable and efficient predictions
+2. Scaling
+3. Logging
+4. System monitoring
+5. Model updates
+# Fairness, bias and ethics
+## Bias
+* Hiring tool that discriminates against women
+* Facial recognition system matching dark skinned individuals to criminal mugshots
+* Biased bank loan approvals against sub groups
+* Toxic effect of reinforcing negative stereotypes
+## Negative use cases
+* Deepfakes
+* Generating fake content for commercial or political purposes
+* Using ML to build harmful products, commit fraud etc.
+# Precision/ recall
+![[ML - Precision, Recall.png]]
+
+**F1 score formula**
+The F1 score is a metric used to evaluate the performance of a classification model, especially in imbalanced/skewed datasets. It is the harmonic mean of precision and recall.
+$$
+F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+$$
+$$
+\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}, \quad
+\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+$$
+# Decision Trees
+* Features are Categorical (discrete values)
+1. Root node
+2. Decision Nodes
+3. Leaf nodes
+## Decision Tree Learning - Question
+**Decision 1 :** How to choose what feature to split on at each node ?
+**Decision 2 :** When do we stop splitting ?
+## Measuring Purity
+**Entropy as a measure of impurity**
+$$
+p_0 = 1 - p_1
+$$
+$$
+H(p_1) = -p_1 \log_2(p_1) - p_0 \log_2(p_0)
+$$
+$$
+= -p_1 \log_2(p_1) - (1 - p_1) \log_2(1 - p_1)
+$$
+p1 = 0 (All Dogs)
+**Entropy =** H(p1) = 0
+
+p1 = 2/6 (2 Cats, 4 Dogs)
+**Entropy =** H(p1) = 0.92
+
+p1 = 3/6 (3 Cats, 3 Dogs)
+**Entropy =** H(p1) = 1
+
+p1 = 5/6 (5 Cats, 1 Dog)
+**Entropy =** H(p1) = 0.65
+
+p1 = 6/6 (All Cats)
+Entropy =** H(p1) = 0
+
+* The impurity decreases, purity increases as we go from 50-50 mix of cats and dogs to 100% all cats
+* Node with a **lot of examples** and **high entropy** is worse **than** a node with **few examples** and **high entropy**
+## Choosing a split: Information Gain
+> **Information Gain :** Reduction of entropy
+![[ML - Information gain.png]]
+$$
+\text{Information Gain} = H(p_1^{\text{root}}) - \left( w^{\text{left}} H(p_1^{\text{left}}) + w^{\text{right}} H(p_1^{\text{right}}) \right)
+$$
+
+## Decision Tree Learning - Answer (Recursive algorithm)
+* Start with all examples at the root node
+* Calculate information gain for all possible features, and pick the one with the highest information gain
+* Split dataset according to selected feature, and create left and right branches
+* Keep repeating splitting process until stopping criteria is met:
+	* When a node is 100% one class
+	* When splitting a node will result in the tree exceeding a maximum depth (Very large value for depth might result in over-fitting)
+	* When improvements in purity score are below a threshold
+	* When number of examples in a node is below a threshold
+## Using one-hot encoding of categorical features
+ * **One hot encoding :** If a categorical feature can take on k values, create k binary features (0 or 1 valued)
+## Continuous valued features
+* Take a few threshold values to classify between the given output labels. Calculate the **Information gain** for the values, compare them with the **Information gain** of other features as well and choose the split accordingly
+## Regression Trees
+* Focus on the **reduction in variance** to choose the split
+![[ML - Regression Trees.png]]
+
+# Tree Ensembles
+## Using multiple decision trees
+> Using a single decision tree has the weakness of being sensitive to small change sin the data. Thus, building a lot of decision tree's (ensemble) is more robust
+## Sampling With replacement
+* Helps to construct a new training set that's a bit similar to but still different from the original training set (This will be the key building block for building an ensemble of tree)

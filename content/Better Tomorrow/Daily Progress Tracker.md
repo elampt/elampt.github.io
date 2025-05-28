@@ -168,4 +168,14 @@
 3. Evening (ML C2 W3 - ML Development process)
 
 ### DSA Prep Day 2 (Striver's SDE Sheet)
-1. Morning - Day 1: Arrays Part - II (4/4)
+1. Morning - Day 2: Arrays Part - II (4/4)
+
+# 28/05/2025 - Wednesday
+### No. of DeepWork sessions (50 mins each) = 4 ✅
+### Session break up
+1. Morning early (ML C2 W3 - ML development process)
+2. Afternoon (ML C2 W3 - Precision, Recall, Lab)
+3. Evening (ML C2 W4 - Decision trees)
+4. Evening (ML C2 W4 - Ensemble Learning )
+### DSA Prep Day 3 (Striver's SDE Sheet)
+1. Morning - Day 3: Arrays Part - III (3/6)
