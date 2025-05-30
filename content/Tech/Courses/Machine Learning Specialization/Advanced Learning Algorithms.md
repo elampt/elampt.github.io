@@ -533,3 +533,45 @@ $$
 > Using a single decision tree has the weakness of being sensitive to small change sin the data. Thus, building a lot of decision tree's (ensemble) is more robust
 ## Sampling With replacement
 * Helps to construct a new training set that's a bit similar to but still different from the original training set (This will be the key building block for building an ensemble of tree)
+
+# Random Forest Algorithm
+> Powerful tree ensemble algorithm
+
+**Given training set of size m**
+For b = 1 to B:
+	Use sampling with replacement to create a new training set of size m
+	Train a decision tree on the new dataset
+* B can typically take value of 64-128
+* During the decision, we take all the tree results to vote
+
+**Random forest algorithm :**
+* At each node, when choosing a feature to use to split, if n features are available, pick a random subset of **k < n** features and allow the algorithm to only choose from that subset of features (**k = √n** typically for larger k values)
+
+# XGBoost (eXtreme Gradient Boosting)
+> Open-source, runs faster, most widely used, has built in regularization to prevent overfitting
+
+**Given training set of size m**
+For b = 1 to B:
+	Use sampling with replacement to create a new training set of size m (But, instead of picking from all examples with equal (1/m) probability, make it more likely to pick misclassified examples from previously trained trees)
+	Train a decision tree on the new dataset
+	
+```python3
+from xgboost import XGBClassifier
+
+model = XGBClassifier()    #XGBRegressor() for Regression problem
+
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+```
+## When to use decision trees
+**Decision Trees and Tree ensembles**
+* Works well on tabular (structured) data (Data stored in spreadsheet)
+* Not recommended for unstructured data (images, audio, text)
+* Fast
+* Small decision trees may be human interpretable
+
+**Neural Networks**
+* Works well on all types of data, including tabular (structured) and unstructured data
+* May be slower than a decision tree
+* Works with transfer learning
+* When building a system of multiple models working together, it might be easier to string together multiple neural networks

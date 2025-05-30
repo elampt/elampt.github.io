@@ -179,3 +179,17 @@
 4. Evening (ML C2 W4 - Ensemble Learning )
 ### DSA Prep Day 3 (Striver's SDE Sheet)
 1. Morning - Day 3: Arrays Part - III (3/6)
+
+# 29/05/2025 - Thursday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+### Session break up
+1. Morning early (ML C2 W4 - Tree ensemble)
+2. Morning (ML C2 W4 - Lab)
+
+### DSA Prep Day 3 (Striver's SDE Sheet)
+1. Morning - Day 3: Arrays Part - III (5/6)
+
+# 29/05/2025 - Friday
+### No. of DeepWork sessions (50 mins each) = 1 ✅
+### Session break up
+1. Morning early (ML C3 W1 - K means clustering)
