@@ -7,9 +7,9 @@
 ```
 Algorithm Swap(a,b)
 {
-	temp = a; ----> 1
-	a = b;    ----> 1
-	b = temp; ----> 1
+   temp = a; ----> 1
+   a = b;    ----> 1
+   b = temp; ----> 1
 }
 ```
 We can write, 
@@ -23,12 +23,12 @@ This can be interpreted as,
 ```
 Algorithm Sum(A,n)
 {
-	S = 0;               ----> 1
-	for(i=0; i<n; i++).  ----> n+1 (the i<n step runs n+1 times)
-	{
-	   S = S + A[i];    ----> n
-	}
-	return S;            ----> 1
+   S = 0;               ----> 1
+   for(i=0; i<n; i++).  ----> n+1 (the i<n step runs n+1 times)
+   {
+      S = S + A[i];    ----> n
+   }
+      return S;            ----> 1
 }
 
 A = [8,3,9,7,2]
@@ -45,13 +45,13 @@ n = 5
 
 Algorithm Add(A,B,n) 
 {
-	for(i=0; i<n; i++)                ---> n+1
-	{
-		for(j=0; j<n; j++)            ---> n x (n+1)
-		{
-		   C[i,j] = A[i,j] + B[i,j]; ---> n x n
-		}
-	}
+   for(i=0; i<n; i++)                ---> n+1
+   {
+      for(j=0; j<n; j++)            ---> n x (n+1)
+      {
+        C[i,j] = A[i,j] + B[i,j]; ---> n x n
+      }
+   }
 }
 ```
 * f(n) = 2n$^2$ + 2n + 1
@@ -65,16 +65,21 @@ Algorithm Add(A,B,n)
 
 Algorithm Multipley(A,B,n)
 {
-	for(i=0; i<n; i++)
+	for(i=0; i<n; i++)                          --> n+1
 	{
-		for(j=0; j<n; j++)
+		for(j=0; j<n; j++)                      --> n x (n+1)
 		{
-			C[i,j] = 0;
-			for(k=0; k<n; k++)
+			C[i,j] = 0;                         --> n x n
+			for(k=0; k<n; k++)                  --> n x n x (n+1)
 			{
-			   C[i,j] = C[i,j] + A[i,k]*B[k,j]
+			   C[i,j] = C[i,j] + A[i,k]*B[k,j]  --> n x n x n
 			}
 		}
 	}
 }
 ```
+* f(n) = 2n$^3$ + 3n$^2$ + 2n + 1
+* S(n) = 3n$^2$ + 4 (A->n$^2$; B->n$^2$; C->n$^2$; n->1; i->1; j->1, k->1)
+* ***Time complexity :** O(n$^3$)
+* ***Space complexity :** O(n$^2$)
+
