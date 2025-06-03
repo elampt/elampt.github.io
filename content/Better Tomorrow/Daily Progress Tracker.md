@@ -189,7 +189,33 @@
 ### DSA Prep Day 3 (Striver's SDE Sheet)
 1. Morning - Day 3: Arrays Part - III (5/6)
 
-# 29/05/2025 - Friday
+# 30/05/2025 - Friday
 ### No. of DeepWork sessions (50 mins each) = 1 ✅
 ### Session break up
 1. Morning early (ML C3 W1 - K means clustering)
+
+# 31/05/2025 - Saturday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Morning early (ML C3 W1 - K means clustering Lab)
+2. Morning (ML C3 W1 - Anomaly detection)
+3. Evening (ML C3 W1 - Anomaly detection)
+
+# 01/06/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+### Session break up
+1. Morning early (ML C3 W2)
+2. Morning (ML C3 W2)
+
+# 02/06/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+### Session break up
+1. Afternoon (ML C3 W2)
+2. Evening (ML C3 W2)
+
+# 03/06/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 3
+### Session break up
+1. Morning early (ML C3 W2 - Content-based filtering)
+2. Morning (ML C3 W2 - Lab)
+3. DSA - Space and Time complexity - Abdul Bari video
