@@ -16,8 +16,8 @@ We can write,
 * f(n) = 3
 * S(n) = 3 (a->1; b->1; temp->1; Three variables used in total)
 This can be interpreted as,
-**Time complexity :** O(1) - Since 3 is a constant
-**Space complexity :** O(1) - Since 3 is a constant
+* ***Time complexity :** O(1) - Since 3 is a constant
+* ***Space complexity :** O(1) - Since 3 is a constant
 ## Frequency Count Method
 **Example 2:**
 ```
@@ -26,7 +26,7 @@ Algorithm Sum(A,n)
 	S = 0;               ----> 1
 	for(i=0; i<n; i++).  ----> n+1 (the i<n step runs n+1 times)
 	{
-		S = S + A[i];    ----> n
+	   S = S + A[i];    ----> n
 	}
 	return S;            ----> 1
 }
@@ -36,8 +36,8 @@ n = 5
 ```
 * f(n) = 2n+3
 * S(n) = n+3 (A->n; n->1; S->1; i->1)
-**Time complexity :** O(n)
-**Space complexity :** O(n)
+* ***Time complexity :** O(n)
+* ***Space complexity :** O(n)
 
 **Example 3:**
 ```
@@ -49,19 +49,32 @@ Algorithm Add(A,B,n)
 	{
 		for(j=0; j<n; j++)            ---> n x (n+1)
 		{
-			C[i,j] = A[i,j] + B[i,j]; ---> n x n
+		   C[i,j] = A[i,j] + B[i,j]; ---> n x n
 		}
 	}
 }
 ```
 * f(n) = 2n$^2$ + 2n + 1
 * S(n) = 3n$^2$ + 3 (A->n$^2$; B->n$^2$; C->n$^2$; n->1; i->1; j->1)
-**Time complexity :** O(n$^2$)
-**Space complexity :** O(n$^2$)
+* ***Time complexity :** O(n$^2$)
+* ***Space complexity :** O(n$^2$)
 
 **Example 4:**
 ```
 # nxn matrix multiplication
 
 Algorithm Multipley(A,B,n)
+{
+	for(i=0; i<n; i++)
+	{
+		for(j=0; j<n; j++)
+		{
+			C[i,j] = 0;
+			for(k=0; k<n; k++)
+			{
+			   C[i,j] = C[i,j] + A[i,k]*B[k,j]
+			}
+		}
+	}
+}
 ```
