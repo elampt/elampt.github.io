@@ -340,3 +340,18 @@ Many large scale recommender systems are implemented in two steps as shown below
 2. Find the projection points and use them as the new feature value
 ![[ML - PCA.png]]
 * Given a z value, we can use **reconstruction** to find the original (x$_1$, x$_2$)
+
+# Reinforcement Learning
+## What is Reinforcement Learning ?
+ > A model learns to make decisions by interacting with an environment and receiving rewards or penalties for its actions 
+ 
+![[ML - Mars Rover RL.png]]
+## The Return in reinforcement learning
+* The return is the sum of rewards that the system gets, weighted by the **discount factor**, where the rewards in a far future are weighted by a discount factor raised to a higher power
+* If there are any rewards that are negative, then the discount factor will actually incentivize the system to push out the negative rewards as far into the future as possible (Applicable in financial applications)
+## Policy
+In Reinforcement learning, our goal is to come up with a function which is called a **policy (π)** whose job is to take input **state (S)** and map it to **action (a)** that it wants us to take
+* Find a policy π that tells you what action (a = π(s)) to take in every state (s) so as to maximize the return
+
+**Markov Decision Process (MDP)** - Indicates that the future only depends on the current state and not on anything that might have occurred prior to of getting to current state
+![[ML - Markov Decision Process (MDP).png]]

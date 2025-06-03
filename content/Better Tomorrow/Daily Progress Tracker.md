@@ -214,8 +214,10 @@
 2. Evening (ML C3 W2)
 
 # 03/06/2025 - Tuesday
-### No. of DeepWork sessions (50 mins each) = 3
+### No. of DeepWork sessions (50 mins each) = 5 ✅
 ### Session break up
 1. Morning early (ML C3 W2 - Content-based filtering)
 2. Morning (ML C3 W2 - Lab)
-3. DSA - Space and Time complexity - Abdul Bari video
+3. Afternoon - DSA - Space and Time complexity - Abdul Bari video
+4. Evening - DSA - Space and Time complexity
+5. Evening (ML C3 W3 - Reinforcement Learning)

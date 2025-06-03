@@ -15,6 +15,7 @@ Algorithm Swap(a,b)
 We can write, 
 * f(n) = 3
 * S(n) = 3 (a->1; b->1; temp->1; Three variables used in total)
+
 This can be interpreted as,
 * ***Time complexity :** O(1) - Since 3 is a constant
 * ***Space complexity :** O(1) - Since 3 is a constant
@@ -23,12 +24,12 @@ This can be interpreted as,
 ```
 Algorithm Sum(A,n)
 {
-   S = 0;               ----> 1
-   for(i=0; i<n; i++).  ----> n+1 (the i<n step runs n+1 times)
+   S = 0;              ----> 1
+   for(i=0; i<n; i++)  ----> n+1 (the i<n step runs n+1 times)
    {
       S = S + A[i];    ----> n
    }
-      return S;            ----> 1
+      return S;        ----> 1
 }
 
 A = [8,3,9,7,2]
@@ -45,11 +46,11 @@ n = 5
 
 Algorithm Add(A,B,n) 
 {
-   for(i=0; i<n; i++)                ---> n+1
+   for(i=0; i<n; i++)               ---> n+1
    {
       for(j=0; j<n; j++)            ---> n x (n+1)
       {
-        C[i,j] = A[i,j] + B[i,j]; ---> n x n
+        C[i,j] = A[i,j] + B[i,j];   ---> n x n
       }
    }
 }
@@ -65,17 +66,17 @@ Algorithm Add(A,B,n)
 
 Algorithm Multipley(A,B,n)
 {
-	for(i=0; i<n; i++)                          --> n+1
-	{
-		for(j=0; j<n; j++)                      --> n x (n+1)
-		{
-			C[i,j] = 0;                         --> n x n
-			for(k=0; k<n; k++)                  --> n x n x (n+1)
-			{
-			   C[i,j] = C[i,j] + A[i,k]*B[k,j]  --> n x n x n
-			}
-		}
-	}
+   for(i=0; i<n; i++)                          --> n+1
+   {
+      for(j=0; j<n; j++)                      --> n x (n+1)
+      {
+         C[i,j] = 0;                         --> n x n
+         for(k=0; k<n; k++)                  --> n x n x (n+1)
+         {
+            C[i,j] = C[i,j] + A[i,k]*B[k,j]  --> n x n x n
+         }
+      }
+   }
 }
 ```
 * f(n) = 2n$^3$ + 3n$^2$ + 2n + 1
@@ -83,3 +84,52 @@ Algorithm Multipley(A,B,n)
 * ***Time complexity :** O(n$^3$)
 * ***Space complexity :** O(n$^2$)
 
+**Example 5:**
+```
+P = 0;
+for(i=1; P<=n; i++)
+{
+   P = P+i
+}
+```
+Now, let's assume that the loop runs k times (From i=1 to i=k; i.e. From P=1 to P = 1+2+..+k )
+=> P = $( \frac{k(k+1)}{2})$
+
+=> $( \frac{k(k+1)}{2})$ > n
+
+=> k$^2$ > n
+
+=> k > $\sqrt{n}$
+
+* **Time complexity :** O($\sqrt{n}$)
+
+**Example 6:**
+```
+for (i=1; i<n; i=i*2)
+{
+   statement;
+}
+```
+Now, let's assume that the loop runs 2$^k$ times (From i =1 to i=2$^k$)
+=> 2$^k$ >= n
+
+=> 2$^k$ = n
+
+=> k = log$_2$n
+
+* **Time complexity :** O(log$_2$n)
+> [!info] Take ceil(log$_2$n) if the value is a float
+
+$$
+\begin{aligned}
+&\text{for (i = 0; i < n; i++)} &&\Rightarrow\quad O(n) \\\\
+&\text{for (i = 0; i < n; i = i + 2)} &&\Rightarrow\quad \frac{n}{2} = O(n) \\\\
+&\text{for (i = n; i > 1; i--)} &&\Rightarrow\quad O(n) \\\\
+&\text{for (i = 1; i < n; i = i * 2)} &&\Rightarrow\quad O(\log_2 n) \\\\
+&\text{for (i = 1; i < n; i = i * 3)} &&\Rightarrow\quad O(\log_3 n) \\\\
+&\text{for (i = n; i > 1; i = i / 2)} &&\Rightarrow\quad O(\log_2 n)
+\end{aligned}
+$$
+$$
+1 < \log n < \sqrt{n} < n \log n < n^2 < n^3 < \cdots < 2^n < 3^n < \cdots < n^n
+$$
