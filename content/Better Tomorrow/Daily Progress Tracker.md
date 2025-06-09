@@ -221,3 +221,32 @@
 3. Afternoon - DSA - Space and Time complexity - Abdul Bari video
 4. Evening - DSA - Space and Time complexity
 5. Evening (ML C3 W3 - Reinforcement Learning)
+
+# 04/06/2025 - Wednesday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+### Session break up
+1. Morning early (ML C3 W3 - Reinforcement Learning)
+2. Morning (ML C3 W3 - Reinforcement Learning)
+
+# 05/06/2025 - Thursday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+### Session break up
+1. Noon (ML C3 W3 - Reinforcement Learning)
+2. Evening (ML C3 W3 - Lab)
+
+# 06/06/2025 - Friday
+### No. of DeepWork sessions (50 mins each) = 0 ❌ 
+
+# 07/06/2025 - Saturday
+### No. of DeepWork sessions (50 mins each) = 1 ✅
+### Session break up
+1. ML project research
+
+# 08/06/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 0 ❌ 
+
+# 06/06/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 1
+
+### Session break up
+1.  Amazon interview prep

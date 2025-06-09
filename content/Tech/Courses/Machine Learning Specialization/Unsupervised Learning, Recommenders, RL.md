@@ -345,7 +345,6 @@ Many large scale recommender systems are implemented in two steps as shown below
 ## What is Reinforcement Learning ?
  > A model learns to make decisions by interacting with an environment and receiving rewards or penalties for its actions 
  
-![[ML - Mars Rover RL.png]]
 ## The Return in reinforcement learning
 * The return is the sum of rewards that the system gets, weighted by the **discount factor**, where the rewards in a far future are weighted by a discount factor raised to a higher power
 * If there are any rewards that are negative, then the discount factor will actually incentivize the system to push out the negative rewards as far into the future as possible (Applicable in financial applications)
@@ -355,3 +354,152 @@ In Reinforcement learning, our goal is to come up with a function which is calle
 
 **Markov Decision Process (MDP)** - Indicates that the future only depends on the current state and not on anything that might have occurred prior to of getting to current state
 ![[ML - Markov Decision Process (MDP).png]]
+## State-action value function
+**Q(s, a) = Return** if we
+* Start in state s.
+* take action a (once)
+* then behave optimally after that
+>The best possible return from state **s** is **max Q(s, a)**
+  The best possible action in state **s** is the action **a** that gives **max Q(s, a)**
+![[ML - Q Function.png]]
+
+## Bellman Equation
+> Helps us to calculate the **state action value function Q(s, a)**
+
+**Q(s, a) = Return** if we
+* Start in state s.
+* take action a (once)
+* then behave optimally after that
+$$
+Q(s, a) = R(s) + \gamma \max_{a'} Q(s', a')
+$$
+$s$: current state
+$R(s)$ = reward of current state
+$a$: current action  
+$s'$: state you get to after taking action $a$
+$a'$: action that you take in state $s'$
+
+## Random (stochastic) environment
+At times, in case of a **stochastic environment**, our Mars Rover may not exactly follow the action that we are asking it to take from a particular state. For example, it might slip and move right due to environmental factors though we command it to move left
+* In such cases, we take the **Expected Return** (Average Return)
+$$
+\text{Expected Return} = \text{Average}(R_1 + \gamma R_2 + \gamma^2 R_3 + \gamma^3 R_4 + \cdots)
+= \mathbb{E}\left[R_1 + \gamma R_2 + \gamma^2 R_3 + \gamma^3 R_4 + \cdots\right]
+$$
+$$
+Q(s, a) = R(s) + \gamma E[\max_{a'} Q(s', a')]
+$$
+# Continuous state spaces
+* In case of a **helicopter** the following values are continuous. The state of a problem isn't just one of a small number of possible discrete values (Ex: 1-6). Instead, it's a vector of numbers any of which could take any values
+1. Position x, y, z
+2. Roll, Pitch, Yaw
+3. Speed in x, y, z directions
+4. Rate of turning (Angle of velocity) of Roll, Pitch, Yaw
+# Lunar Lander
+**Actions :**
+1. do nothing
+2. left thruster (Moves to the right)
+3. Main thruster (Located at the bottom)
+4. right thruster (Moves to the left)
+
+**Reward Function :**
+1. Getting to landing pad: 100-140
+2. Additional reward for moving toward/away from pad
+3. Crash: -100
+4. Soft Landing: +100
+5. Leg grounded: +10
+6. Fire main engine: -0.3
+7. Fire side thruster: -0.03
+
+**Goal :**
+* Learn a policy $π$ that, given
+$$
+s = \begin{bmatrix}
+x \\
+y \\
+\dot{x} \\
+\dot{y} \\
+\theta \\
+\dot{\theta} \\
+l \\
+r
+\end{bmatrix}
+$$
+picks action $a = π(s)$ so as to maximize the return. ($γ = 0.985$)
+## Learning the state-value function
+**DQN - Deep Q Network**
+1. **Initialize** neural network randomly as guess of $Q(s, a)$
+2. **Repeat**{
+   Take actions in the lunar lander. Get $(s, a, R(s), s')$
+   Store 10,000 most recent $(s, a, R(s), s')$ tuples -> **Reply Buffer** (Storing recent tuples)
+   }
+3. **Train** neural network:
+   Create training set of 10,000 examples using
+   $x = (s, a)$ and $y = R(s) + \gamma \max_{a'} Q(s', a')$
+   Train $Q_{new}$ such that $Q_{new}(s, a)$ ~ y
+Set $Q = Q_{new}$
+
+## Algorithm Refinement
+### Improved neural network architecture
+![[ML - State value function architecture.png]]
+* In our previous architecture, with an input of 12 values, whenever we are in a state s, we would have to carry out inference separately four times to compute these four values $Q(s, nothing)$, $Q(s, left$, $Q(s, main)$, $Q(s, right)$ in order to pick the action that give the largest **Q** value. But, this is in-efficient because we have to carry out inference from every state four times
+* It turns out to be more efficient to train a single neural network to output all four of the values simultaneously as shown in the above image
+### ε - greedy policy
+> How to choose action while still learning ?
+
+In some state s
+**Option 1:**
+Pick the action **a** that maximizes $Q(s, a)$
+
+**Option 2:**
+* With probability 0.95, pick the action **a** that maximizes $Q(s, a)$ -> Referred to as **Greedy step or Exploitation step**
+* With Probability 0.05, pick an action $a$ randomly (Suppose the $Q(s, a)$ was initialized randomly so that the learning algorithm thinks firing the main thruster is never a good idea, the neural network parameters may be initialized such that $Q(s, main)$ is very **low**. If that's the case, the neural network will never ever pick the action of firing the main thruster since it has a **very low Q**, thus it won't ever learn that firing the main thruster is actually a good idea in case we follow only **Option 1**) -> Referred to as **Exploration step or ε - greedy policy (ε = 0.05)**
+*  It's common to start **ε high** and **Gradually decrease** so that eventually we are taking greedy actions mostly and random actions rarely
+### Mini-batch and soft update
+#### Mini-batch
+* In our Housing price prediction algorithm,
+$$
+J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
+$$
+$$
+m = 100{,}000{,}000
+$$
+$$
+m' = 1{,}000
+$$
+**repeat {**
+$$
+w = w - \alpha \frac{\partial}{\partial w} \left( \frac{1}{2m'} \sum_{i=1}^{m'} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2 \right)
+$$
+$$
+b = b - \alpha \frac{\partial}{\partial b} \left( \frac{1}{2m'} \sum_{i=1}^{m'} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2 \right)
+$$
+**}**
+
+* Taking the the Gradient-descent algorithm update step to consideration, in each step, we take summation of $m$ samples. When $m$ value is too large, the summation might be computationally expensive. So, instead of $m = 100,000,000$, we take random $m' = 1,000$ entries from the sample during each updating step to enhance the algorithm
+---
+* Similarly, in our Reinforcement Learning Algorithm, we store $10,000$ most recent $(s, a, R(s), s')$ tuples.
+* While training the model, we create the training set of $1,000$ examples alone instead of $10,000$ examples which speeds up the entire process
+#### Soft-update
+* Abruptly updating the $Q$ value to $Q_{new}$ might affect the algorithm in case $Q_{new}$ turns out to be a bad value
+* Making more gradual change to $Q$ or to update the original neural network parameters $w, B$ is a better choice
+
+$$
+Set\ Q = Q_{new}
+$$
+$$
+w = w_{new}; 
+b = b_{new}
+$$
+**Instead, update as follows :**
+$$
+w = 0.01w_{new} + 0.99w
+$$
+$$
+B = 0.01B_{new} + 0.99B
+$$
+## The state of reinforcement learning
+### Limitations of Reinforcement Learning
+* Much easier to get to work in a simulation than a real robot
+* Far fewer applications than supervised and unsupervised learning
+* But, exciting research direction with potential for future applications
