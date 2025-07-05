@@ -18,3 +18,14 @@
 	* AI scribe tools like Abridge – listens to clinician-patient convo and drafts notes
 	* Chatbots for history intake or literature summarization
 
+
+## Possible Ideas
+1. **SOAP note generator** for patient encounters - Using GenAI
+2. **AI-powered EHR generator** or **EHR Summarizer**
+3. **Patient Intake ChatBot** - Automate patient history intake via chat or voice, then summarize for the clinician
+4. **Healthcare x Finance** (Study on healthcare drug industrial leaders like Elli Lilly, Novo Nordisk's weight loss, diabetes drugs and how if affects their market sentiment)
+5. **Emergency Room (ER) Triage Assistant** - Prioritize ER patients based on symptom severity using AI
+
+
+### Project Idea Resources
+[30 Practical Generative AI Use Cases in Healthcare With Real-World Projects](https://medium.com/projectpro/30-practical-generative-ai-use-cases-in-healthcare-with-real-world-projects-e5ff30258340)

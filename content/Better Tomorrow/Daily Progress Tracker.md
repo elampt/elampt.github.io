@@ -245,8 +245,56 @@
 # 08/06/2025 - Sunday
 ### No. of DeepWork sessions (50 mins each) = 0 ❌ 
 
-# 06/06/2025 - Monday
-### No. of DeepWork sessions (50 mins each) = 1
+# 09/06/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
 
 ### Session break up
-1.  Amazon interview prep
+1. Amazon interview prep
+2. Omnify Project
+
+# 10/06/2025 - Tuesday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+
+### Session break up
+1. Morning Early (Omnify Project)
+2. Morning (Omnify Project Completion)
+3. Noon (Omnify Project GitHub, Recording)
+
+# 11/06/2025 - Wednesday
+### No. of DeepWork sessions (50 mins each) = 2 ✅
+
+### Session break up
+1. Morning Early (ML Project Research)
+2. Morning (Job Apply)
+3. Afternoon (Job Apply)
+4. Evening (PhonePe first round assessment)
+
+# 12/06/2025 - Thursday
+### No. of DeepWork sessions (50 mins each) = 1 ✅
+### Session break up
+1. Morning (Job Apply)
+
+# 13/06/2025 - Friday
+### No. of DeepWork sessions (50 mins each) = 3 ✅
+### Session break up
+1. Morning Early (PhonePe interview prep)
+2. Morning (PhonePe interview prep)
+3. Morning (PhonePe interview prep)
+
+# 14/06/2025 - Saturday
+### No. of DeepWork sessions (50 mins each) = 0 ❌ 
+
+# 15/06/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 1 ✅
+### Session break up
+1. Evening (Interview prep - Resume run through)
+
+# 15/06/2025 - Sunday
+### No. of DeepWork sessions (50 mins each) = 1 ✅
+### Session break up
+1. Evening (Interview prep - Resume run through)
+
+# 16/06/2025 - Monday
+### No. of DeepWork sessions (50 mins each) = 
+### Session break up
+1. 
