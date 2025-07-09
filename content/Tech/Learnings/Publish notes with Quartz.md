@@ -21,3 +21,13 @@
 `npx quartz update`
 
 For more details, refer [Quartz 4.0](https://quartz.jzhao.xyz/) official documentation
+
+## Key commands - Personal 
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
+```bash
+npx quartz sync --no-pull
+```
