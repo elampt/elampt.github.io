@@ -1,0 +1,4 @@
+# Value Investing Analyzer : 
+- Given a company stock details like fundamentals, EPS, P/E ratio, Revenue, Profit, Book Value, Asset Value, Debt, Debt to Equity ratio, historical returns etc., the application should give the company a value rating for long-term investment (Whether it's a Buy, Hold or Sell with the current trend)
+- Also, given **n** companies as input, it should compare them and give a statistical comparison report (Could be similar sectors or different sectors)
+- Think of other possible input factors that could affect the stock (Like alpha, beta, how it performed during dips - say times when the broad market or the sector went down 5-10% or more)
