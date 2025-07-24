@@ -30,3 +30,76 @@ Process vast data -> Learn Patterns -> Make informed decisions
 ### Advanced Deep Learning
 1. **Generative Models** - Aim to generate new data samples similar to input data, useful in creating new content
 2. **Transformer Architecture** - Consisting of encoders(Takes in inputs) and decoders(Gives the output), crucial in language translation and code generation tasks.
+
+## Discriminative, Predictive, and Generative AI
+**Discriminative / Predictive**
+- Focuses on classifying and predicting specific outcomes based on input data
+**Generative / Probabilistic**
+- Aims to produce new data samples that resemble input
+
+## Machine Learning Pipeline
+![[ML - Pipeline.png]]
+
+## Machine Learning Tools and Services (AWS)
+### Machine Learning Stack Layers :
+1. The Data layer
+2. The model layer
+3. The deployment and monitoring layer
+### Tools for Machine Learning:
+1. Jupyter Notebook
+2. JupyterLab (JupyterLab offers much more features and an enhanced interface, which can be extended through extensions)
+3. Pandas (Used for data handling and analysis)
+4. Matplotlib (Used for scientific, static visualizations on data)
+5. Seaborn (Built on Matplotlib, provides high level interface for statistical graphics)
+6. NumPy (Used for Scientific computing)
+7. Scikit-Learn (Open-source ML library that supports supervised and un-supervised learning)
+8. Some AWS supported frameworks (Can be used from Amazon SageMaker):
+	1. PyTorch
+	2. TensorFlow
+	3. Keras
+	4. Torch
+	5. CNTK
+## Amazon Instances designed for Machine Learning Applications
+1. Amazon EC2 C5 and C5n instances
+2. Amazon EC2 P3 instances
+3. AWS IoT Greengras
+4. Amazon Elastic Inference
+
+### Machine Learning managed Services
+> AWS offers many managed services that do not require any ML experience
+
+1. Computer Vision
+	1. Amazon Recoknition
+	2. Amazon Textract
+2. Chat Interface
+	1. Amazon Lex
+3. Speech
+	1. Amazon Poly
+	2. Amazon Transcribe
+4. Fraud Detecting
+	1. Amazon Fraud Detector
+5. Language
+	1. Amazon Comprehend
+	2. Amazon Translate
+6. Recommendations
+	1. Amazon Personalize
+
+### Amazon SageMaker
+> Helps data scientists and developers to prepare, build, train and deploy high-quality machine learning models (Prepare -> Build -> Train & Tune -> Deploy & Manage)
+
+**SageMaker Features :**
+1. **SageMaker Notebooks** (It can deploy ML instances that run on Jupyter Notebook or JupyterLab)
+2. **Instance types** 
+![[AWS - Sagemaker_instances.png]]
+3. **Data Visualization**
+4. **Model Selection** 
+5. **Deployment**
+6. **Marketplace integration**
+
+### Additional Resources
+[Machine Learning Ramp Up Guide](https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Machine_Learning.pdf)
+[Machine Learning on AWS](https://aws.amazon.com/ai/machine-learning/)
+[AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/)
+[Machine Learning Solutions in the AWS marketplace](https://aws.amazon.com/marketplace/solutions/machine-learning)
+[Amazon Machine Learning Documentation](https://docs.aws.amazon.com/machine-learning/?id=docs_gateway)
+[Machine Learning in the AWS Partner Network](https://aws.amazon.com/partners/)
