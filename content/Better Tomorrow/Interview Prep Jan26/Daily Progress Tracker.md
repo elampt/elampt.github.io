@@ -1,9 +1,11 @@
 ![[Pasted image 20250509210806.png | 600x420]]
 >[!tip] Focus on the Process/System rather than the Outcome/Goal
 
-# 15/07/2025 - Tuesday
+# WEEK 1 (SG)
+# 26/01/2026 - Monday
 
-### No. of DeepWork sessions (50 mins each) = 
+DSA (1 problem) + AI Awareness ✅
 
-### Session break up
-1. 
+# 27/01/2026 - Tuesday
+
+DSA (1 problem)
