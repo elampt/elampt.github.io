@@ -195,6 +195,13 @@ tags:
 
 ---
 
+29. **Will** 
+    So brave of him to tell the entire world about all his insecurities and failures, even though he is one of the most famous personalities in the world 
+    - **Date:** March 2025  
+    - **Author:** Will Smith
+
+---
+
 ## **Tamil:**
 
 1. **சிவகாமியின் சபதம்**  

@@ -1,4 +1,3 @@
-# Quartz Digital Garden Setup
 
 This documents how my digital garden at [elampt.github.io](https://elampt.github.io) works - from Obsidian notes to published website.
 
