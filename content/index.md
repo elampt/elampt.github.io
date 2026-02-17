@@ -11,7 +11,6 @@ I'm Elam, a Product Solution Engineer at PhonePe. This is my personal living, ev
 
 >[!quote] You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. ― Steve Jobs
 
----
 
 ## Explore
 
