@@ -1,6 +1,18 @@
 @use "./base.scss";
 @use "./variables.scss" as *;
 
+// Page title: show "Elam" on mobile instead of full name
+@media all and ($mobile) {
+  .page-title a {
+    font-size: 0;
+
+    &::after {
+      content: "Elam";
+      font-size: 1.75rem;
+    }
+  }
+}
+
 // Landing Page
 .landing-page {
   & > h1:first-child {
