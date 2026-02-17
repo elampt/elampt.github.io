@@ -1,23 +1,59 @@
 ---
-title: "Elambharathi Thangavel | Python Developer"
-description: "Notes, projects, and learning journal of Elam"
+title: Elambharathi Thangavel
+description: "Notes, projects, and learning journal of a Python developer exploring tech, AI, and personal growth."
+cssclasses:
+  - landing-page
 ---
-# Welcome 👋
 
-Hey there! I am Elam (Currently working as a Product Solution Engineer at PhonePe)and this is my **personal knowledge garden** 🌱 — a living, evolving space where I document what I'm learning across tech, data, AI, and beyond.
+**Welcome to my Digital Garden**
 
-You'll find:
-- ✍️ Notes from courses and projects  
-- 🧪 Experiments in Python, FastAPI, and GenAI  
-- 📊 Explorations in data analysis & backend engineering  
-- 🚀 Mini-builds, weekend hacks, and thoughts along the way
+I'm Elam, a Product Solution Engineer at PhonePe. This is my personal living, evolving space where I document what I learn across tech, data, AI, and life.
 
-> 💡 _“Writing is thinking. To write well is to think clearly. That's why it's so hard.”_ – David McCullough
+>[!quote] You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. ― Steve Jobs
 
 ---
 
-### Let’s connect 🤝  
-📇 [LinkedIn](https://www.linkedin.com/in/elambharathithangavel/)  
-💻 [GitHub](https://github.com/elampt)
+## Explore
 
-Thanks for stopping by. Keep building, keep learning!
+<div class="garden-cards">
+<div class="garden-card">
+<img class="card-img" src="./Images/macbook.jpeg" alt="Tech" />
+
+### [Tech](./Tech/)
+
+Projects, courses, and technical learnings. Python, FastAPI, GenAI, machine learning, and backend engineering.
+
+</div>
+<div class="garden-card">
+<img class="card-img" src="./Images/kallikaatu_ithihaasam.jpeg" alt="Books" />
+
+### [Books](./Books/)
+
+Notes and reflections from books I have read — personal finance, self-improvement, and finding purpose.
+
+</div>
+<div class="garden-card">
+<img class="card-img" src="./Images/power_of_tiny_gains.png" alt="Better Tomorrow" />
+
+### [Better Tomorrow](./Better-Tomorrow/)
+
+Interview preparation, career planning, fitness tracking, and conversations that shaped my thinking.
+
+</div>
+<div class="garden-card">
+<img class="card-img" src="./Images/bharathi.jpeg" alt="Fernweh" />
+
+### [Fernweh](./Fernweh/)
+
+Travel stories, places I've explored, lessons from the road, and photos from the journey.
+
+</div>
+<div class="garden-card">
+<img class="card-img" src="./Images/nse_bombay.jpeg" alt="Lifestyle" />
+
+### [Lifestyle](./Lifestyle/)
+
+Personal finance planning and life organization.
+
+</div>
+</div>
