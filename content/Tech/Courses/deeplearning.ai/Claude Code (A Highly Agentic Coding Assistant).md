@@ -59,9 +59,9 @@ Claude: "Found it! Here's the login handler in src/auth/login.js..."
 - `Shift + Tab` `Shift + Tab` - **Plan mode** (Claude will do some thorough exploration and planning before writing any code)
 - `Shift + Tab` - **auto-accept edits** (Allows Claude to execute file edits and commands without prompt interruption)
 - `/mcp` - Lists all he connected MCP servers and the tools they provide
-- `Think a lot` -  This query can be added along with prompts where we want to trigger's Claude's ability to enable extended thinking to allocate few more tokens to the thinking process, we can also see this process
-- `claude --resume` - To go back to a previous conversation
+- - `claude --resume` - To go back to a previous conversation
 - `/hooks`  - Manage hook configurations for tool events
+- `Think a lot` -  This query can be added along with prompts where we want to trigger's Claude's ability to enable extended thinking to allocate few more tokens to the thinking process, we can also see this process
 
 ### Custom commands
 - We can create our own commands by creating a `commands` dir under `.claude` dir and add the new features inside 
@@ -104,10 +104,10 @@ Claude: "Found it! Here's the login handler in src/auth/login.js..."
 
 ## Hooks
 > Hooks are "if this happens, then do that" rules that run automatically at specific points in Claude Code's workflow.
-- As we have different operations in Claude code, like executing a tool or something happening after tool
-	- We can inject specific code to run at any point in the life cycle of Claude Codes operation
+- We can inject our own script to run at any point in the life cycle of Claude Codes operation (Like something after a tool or before a tool call etc.)
+
 ![[Claude Code - Hooks.png]]
 - `/hooks` usage
 ![[Claude Code - Hooks description.png]]
-> [!todo] Sample use case: Run long tasks, walk away, and get pinged via Slack when Claude needs me or when the task is finished
+> [!todo] Sample use case: Claude sending out Slack messages for inputs from us, notifications on code completion etc. can be implemented with this
 
