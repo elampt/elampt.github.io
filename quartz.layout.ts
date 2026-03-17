@@ -10,6 +10,7 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.RecentNotes({ title: "Recently Updated", limit: 3, showTags: true }),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.ChatWidget({ chatUrl: "https://elam-bubble-bot.streamlit.app/?embed=true" }),
   ],
   footer: Component.Footer({
     links: {
