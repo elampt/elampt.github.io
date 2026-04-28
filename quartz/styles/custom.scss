@@ -1,6 +1,35 @@
 @use "./base.scss";
 @use "./variables.scss" as *;
 
+// Portfolio page styling
+.portfolio {
+  & > h1:first-child {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  & h2 {
+    border-bottom: 2px solid var(--lightgray);
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+  }
+
+  & h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  & h3 + p > em {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-style: normal;
+  }
+
+  & ul {
+    margin-top: 0.5rem;
+  }
+}
+
 // Page title: show "Elam" on mobile instead of full name
 @media all and ($mobile) {
   .page-title a {

@@ -16,7 +16,15 @@ I'm Elam, a Product Solution Engineer at PhonePe. This is my personal living, ev
 
 <div class="garden-cards">
 <div class="garden-card">
-<img class="card-img" src="./Images/macbook.jpeg" alt="Tech" />
+<img class="card-img" src="./Images/macbook.jpeg" alt="Portfolio" />
+
+### [Portfolio](./Portfolio/)
+
+Resume, work experience, AI/LLM projects, and skills. The professional snapshot — built for recruiters and collaborators.
+
+</div>
+<div class="garden-card">
+<img class="card-img" src="./Images/robot.jpeg" alt="Tech" />
 
 ### [Tech](./Tech/)
 
