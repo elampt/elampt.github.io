@@ -30,6 +30,78 @@
   }
 }
 
+// Fernweh hero image
+.fernweh-hero {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 75%;
+  border-radius: 8px;
+  margin: 0 0 1.5rem;
+  display: block;
+
+  @media all and ($mobile) {
+    height: 220px;
+  }
+}
+
+// Featured "Up next" trip callout
+.next-trip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: linear-gradient(
+    135deg,
+    var(--highlight),
+    rgba(132, 165, 157, 0.12)
+  );
+  border-left: 4px solid var(--tertiary);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.next-trip-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.next-trip-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--darkgray);
+}
+
+.next-trip-dates {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+// Travel map embed (Google My Maps)
+.travel-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--lightgray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media all and ($mobile) {
+    aspect-ratio: 4 / 5;
+  }
+}
+
 // Page title: show "Elam" on mobile instead of full name
 @media all and ($mobile) {
   .page-title a {
