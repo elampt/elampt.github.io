@@ -15,7 +15,7 @@ cssclasses:
 
 ## About
 
-Python Engineer building production-grade AI agents and LLM applications with LangGraph, RAG, and MCP. Built an autonomous Jira-to-PR coding agent with self-healing test loops, Playwright visual verification via MCP, and human-in-the-loop approval — with full LangFuse observability. Also built an agentic RAG chatbot with two-stage retrieval and config-driven architecture. Won PhonePe's AI Immersion Hackathon. Backed by production experience — automation pipelines on HDFS, on-call across 6 microservices, and FastAPI backends with PostgreSQL.
+Python Engineer building production-grade AI agents and LLM applications with LangGraph, RAG, and MCP. Hands-on experience **shipping containerized AI services to AWS** — Docker, HTTPS reverse proxies, observability. Won PhonePe's AI Immersion Hackathon. Backed by production experience — automation pipelines on HDFS, on-call across 6 microservices, and FastAPI backends with PostgreSQL.
 
 ---
 
@@ -43,12 +43,14 @@ Python Engineer building production-grade AI agents and LLM applications with La
 
 ## Featured Projects
 
-### Jira Coding Agent — AI-Powered Code Automation
-*Apr 2026 · [GitHub](https://github.com/elampt/jira-coding-agent)*
+### Jira Coding Agent — Deployed AI Agent on AWS
+*Apr 2026 – Present · [GitHub](https://github.com/elampt/jira-coding-agent)*
 
 Built an **autonomous AI coding agent** using LangGraph that watches Jira for tickets, modifies a React codebase via RAG-powered code search (FAISS + grep), runs tests with a **self-healing retry loop**, and creates PRs with **before/after screenshots via Playwright MCP**. Includes human-in-the-loop approval for high-risk changes and full LLM observability via LangFuse.
 
-**Tech:** Python, LangGraph, FAISS, Playwright MCP, LangFuse, GitHub API, Jira API
+**Shipped to production on AWS EC2** — containerized with a multi-stage Docker build (non-root user, healthchecks), fronted by **Caddy reverse proxy with auto-Let's Encrypt HTTPS** on a custom domain. Optimized the image from 6 GB → 800 MB (**87% reduction**) by routing torch to PyTorch's CPU-only index. Modern Python toolchain: UV, Ruff, PyRight, Makefile.
+
+**Tech:** Python, LangGraph, FAISS, Playwright MCP, LangFuse, AWS EC2, Docker, Caddy, GitHub API, Jira API
 
 ### Bubble — Production-Grade RAG Chatbot
 *Apr 2025 – Present · [GitHub](https://github.com/elampt/elam-chatbot) · [Try it](https://elam-bubble-bot.streamlit.app/)*
@@ -74,7 +76,9 @@ Full-stack application with **FastAPI backend** (async endpoints, JWT auth, depe
 
 **Backend:** FastAPI, REST API Design, Async Python, PostgreSQL, Redis, Pydantic, JWT Authentication, Rate Limiting
 
-**Data & Infra:** PySpark, Apache Hive, HDFS, Airflow, Cron, Docker, Git, Postman
+**Data & Infra:** PySpark, Apache Hive, HDFS, Airflow, Cron, Git, Postman
+
+**Cloud & DevOps:** AWS EC2, Docker (multi-stage builds), Caddy reverse proxy, Let's Encrypt, Linux/Ubuntu, UV, Ruff, PyRight, Make
 
 ---
 
