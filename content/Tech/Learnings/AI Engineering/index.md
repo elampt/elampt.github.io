@@ -21,7 +21,7 @@ These cover the concepts that get asked and that I couldn't already answer cold.
 | [[RAG Advanced]] | Naive vs agentic vs Self-RAG · HyDE, decomposition, step-back · multi-hop · GraphRAG · per-user access control · parent-child chunking |
 | [[AI Agents]] | MCP · ReAct vs Plan-and-Execute · how tool calling actually works · agent memory and eviction · prompt injection and agent security · loop termination |
 | [[Embeddings and Vector Search]] | Dimensionality and cost · embedding quantization and Matryoshka · sparse vs dense and hybrid search · changing the embedding model in production · metadata and multi-tenancy |
-| [[Evaluation]] | LLM-as-judge and its four biases · deterministic checks · offline vs online · golden datasets · red teaming · reading benchmarks |
+| [[Evaluation]] | LLM-as-judge and its four biases · deterministic checks · offline vs online · golden datasets · red teaming · reading benchmarks · building an eval harness for an agent |
 
 ---
 

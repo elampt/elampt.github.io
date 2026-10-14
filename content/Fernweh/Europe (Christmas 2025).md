@@ -19,7 +19,7 @@ tags:
 ## The Story
 
 - **10 April, 2025** -> Had an one hour video call with Kowshik, he showed me around Paris (The streets, Louvre Museum, bus, trams etc). During the call, I developed a feeling of wanting to see this part of the world, the food, people etc.
-- Had continuous discussions with Kowshil every now and then about the right time to visit, we discussed October first, but it was only discussions, nothing solid. I developed the habit of checking tickets in MMT often, BLR - Paris, Chennai - Paris all options. Was searching for a full-time job as well, so my goal was 1. Get a new job and 2. Execute the Paris trip
+- Had continuous discussions with Kowshik every now and then about the right time to visit, we discussed October first, but it was only discussions, nothing solid. I developed the habit of checking tickets in MMT often, BLR - Paris, Chennai - Paris all options. Was searching for a full-time job as well, so my goal was 1. Get a new job and 2. Execute the Paris trip
 - **01 August, 2025** -> Got the first month salary. Found cheap tickets with Gulf Air, spoke with Kowshik, booked the tickets that same night without any second thoughts. Only after I booked the tickets I actually realized the weight of it, need to save for it, it is a very huge commitment especially at the start of my career, was in a dilemma if I've made the right financial decision (P.s. The ticket was my 80% of my monthly salary 😂)
 
 ## Paris

@@ -202,6 +202,20 @@ tags:
 
 ---
 
+30. **The Forty Rules of Love**  
+    Love cannot be explained. It can only be experienced  
+    - **Date:** August 2026  
+    - **Author:** Elif Shafak  
+
+---
+
+31. **The Alchemist** (Re-read)  
+    Maktub: It is written  
+    - **Date:** September 2026  
+    - **Author:** Paulo Coelho  
+
+---
+
 ## **Tamil:**
 
 1. **சிவகாமியின் சபதம்**  

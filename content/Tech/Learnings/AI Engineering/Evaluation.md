@@ -6,7 +6,7 @@ tags: [ai, evaluation, llm-as-judge, interview-prep]
 
 # Evaluation
 
-> Across every 2026 hiring write-up, the same line recurs: *evaluation is the skill gap*. It's also my honest weak point — neither Bubble nor the Jira agent has an eval suite. That admission, followed by a specific plan, is a stronger answer than pretending otherwise.
+> Across every 2026 hiring write-up, the same line recurs: *evaluation is the skill gap*. It's also my honest weak point — the Jira agent now has a small behaviour-level harness (below) but no quality eval, and Bubble has no eval suite at all. Saying that plainly, followed by a specific plan, is a stronger answer than pretending otherwise.
 
 ---
 
@@ -114,11 +114,55 @@ Being able to say *"that difference isn't significant at that sample size"* is a
 
 ---
 
+## Evaluating an agent — the harness I built for the Jira agent
+
+> Code: [`evals/` in jira-coding-agent](https://github.com/elampt/jira-coding-agent/tree/main/evals)
+
+**What it does.** Sends fixed tickets through the real agent graph against a pinned copy of a small React app, then checks the *end state*: did it pause when it should, which files changed, do the tests pass, how many model calls and fixer retries. Six cases, each a contract the system should always honour:
+
+| Case | What it proves |
+|---|---|
+| Low-risk text change | The happy path runs straight through and passes first time |
+| High-risk ticket, approved | Pauses *before* writing; "approve" finishes it |
+| High-risk ticket, rejected | Stops cleanly and leaves the code untouched |
+| Forced test failure | A test the planner can't see fails; the fixer must repair the right file without undoing the ticket's change |
+| Environment failure | A missing `npm` is reported as a server problem; the fixer is never called |
+| Model failure | Persistent malformed model responses end with one short error and no code touched |
+
+**Two kinds of eval — and I've built only one.**
+
+- **Behaviour contracts** — "risky tickets must pause", "a missing npm must not trigger edits". Deterministic expectations, expected pass rate 100%, cheap to run.
+- **Quality evals** — "does it actually solve tickets?" Statistical: many real tickets, a pass *rate* with error bars. Not built yet; it needs a richer fixture than a seven-file app, where the planner is rarely stuck.
+
+**Design decisions, and why**
+
+- **Grade the outcome, not the path.** Models reach the same result by different routes. Asserting on files changed and tests green stays valid when the model or the prompt changes; asserting on which steps it took does not.
+- **The test suite is the grader, so no LLM-as-judge.** For code there is ground truth, which means none of the four judge biases apply. Judges are for open-ended output.
+- **A fresh, pinned fixture for every run** — recorded source commit, new git-tracked copy, cloned `node_modules`. Without isolation one run's leftovers contaminate the next, and results can't be compared over time.
+- **Fault injection for the failure paths.** Remove npm from `PATH`; make every model call raise Groq's `tool_use_failed`. Those cases are deterministic and nearly free (0 to ~2.7K tokens).
+- **Repeats.** The same ticket can pass today and fail tomorrow, so model-dependent cases run several times and report a pass rate. One run on each side can't tell a regression from noise — the paired-comparison point above, in practice.
+- **Record enough to diagnose without re-running:** model, git version, tokens, the final diff, and the agent's own log lines.
+- **Budget by measurement.** A model-using case costs 2.4K–5K tokens, a full pass ~19K. Groq's free tier allows 8K tokens/minute and ~200K/day, so the runner paces itself by tokens spent.
+
+**Proving the harness can fail.** I ran the environment-failure case against the code from *before* I fixed that bug. It failed with three specific reasons: the fixer was called, it used 3 retries, and it made 5 model calls (~10K tokens spent "fixing" a missing npm). *A test you've never watched fail isn't evidence of anything.*
+
+**What building it taught me**
+
+- A hidden-test case only works if *both* halves of the search skip the folder. Building it exposed that my grep search never applied its own skip list — a real bug, found by writing the test.
+- A missing tool is not something an LLM can fix, yet given `npm: command not found` the fixer returned edits to unrelated files. Classify failures before asking the model.
+- The model occasionally emits a tool call that was never registered. One crash told me nothing about the rate, so I sampled the call repeatedly, and I also made the failure survivable with a bounded retry.
+
+**Honest limits.** One small fixture app, behaviour cases only, run history is local, and small sample sizes mean small differences prove nothing.
+
+**Next:** a quality set built from real past tickets on a richer fixture; paired comparison when choosing between candidate models; wire it into CI.
+
+---
+
 ## My honest position — and the plan
 
-Neither project has an eval suite. I tuned Bubble's retrieval by reading outputs and judging them myself, which isn't reproducible and doesn't scale. The tells are visible in the code: `min_score` sits at −10.0 because I had no labelled data to tune it against, and chunking went from 322 to 82 chunks because I eyeballed the size distribution.
+The Jira agent has a behaviour-level harness (previous section) but no quality eval, and Bubble has no eval suite. I tuned Bubble's retrieval by reading outputs and judging them myself, which isn't reproducible and doesn't scale. The tells are visible in the code: `min_score` sits at −10.0 because I had no labelled data to tune it against, and chunking went from 322 to 82 chunks because I eyeballed the size distribution.
 
-**What I'd build, in order:**
+**What I'd build for Bubble, in order:**
 
 1. Freeze 30 real questions with hand-written reference answers
 2. Measure retrieval (`recall@k`) and generation (faithfulness) **separately**, because they fail for different reasons and need opposite fixes
@@ -142,6 +186,7 @@ Volunteering this before being asked turns a gap into evidence of judgement. Bei
 | Golden set | Real inputs, stratified, frozen, versioned, held-out slice, start at 30 |
 | Red teaming | Adversarial testing by category; every hit becomes a regression test |
 | Benchmarks | Contaminated and generic — shortlist with them, decide with your own evals |
+| Agent eval harness | Grade end state not path; test suite as ground truth; fresh pinned fixture; fault injection for failure paths; repeats for nondeterminism; prove it can fail |
 
 ---
 
